@@ -8,6 +8,9 @@
       <h2 class="subtitle">
         My little playground to test Nuxt
       </h2>
+      <nuxt-link to="/home">
+        <button class="button is-info">Let's do this !</button>
+      </nuxt-link>
     </div>
   </div>
 </section>

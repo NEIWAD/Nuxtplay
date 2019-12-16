@@ -33,12 +33,13 @@ export default {
    */
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module'
   ],
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: [
+    '@nuxtjs/bulma'
+  ],
   /*
    ** Build configuration
    */
@@ -46,6 +47,13 @@ export default {
     /*
      ** You can extend webpack config here
      */
+    postcss: {
+      preset: {
+        features: {
+          customProperties: false
+        }
+      }
+    },
     extend(config, ctx) {}
   }
 }
